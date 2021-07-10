@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML 201</title>
+    <link rel="shortcut icon" href="images/favicons/favicon.png" type="image/png">
+</head>
+<body>
+
+    <h1 id="top">Welcome to HTML 201</h1>
+    <a href="#bottom">Scroll to bottom of page</a>
+
+    <p>
+        <span style="text-decoration: underline;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span> Soluta neque numquam omnis vero pariatur eos dolore nihil maxime. Eum officiis amet laudantium optio. Autem accusamus repellendus blanditiis perspiciatis voluptatibus exercitationem.
+    </p>
+
+    <img src="images/landscape1.jpg" alt="landscape1" height="500">
+
+
+    <!-- table and merging tables colspan rowspan -->
+    <table border="1" width="100%">
+        <tr>
+            <th colspan="3">Welcome to my website</th>
+        </tr>
+        <tr>
+            <td width="20%">
+                <h3>Navigation</h3>
+            </td>
+            <td>
+                <h3>Content</h3>
+            </td>
+        </tr>
+    </table>
+
+    <style>
+        .classNameHere{
+            padding: 40px; 
+            color: white; 
+            background-color: black;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+        #testingId {
+            border: 5px solid red;
+        }
+    </style>
+
+    <div class="classNameHere uppercase">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ipsam beatae, qui quisquam repellat suscipit. Itaque impedit nam porro quis vitae nisi corporis sint debitis. Labore dolorem tenetur ad ratione.
+    </div>
+
+    <div class="classNameHere" id="testingId">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, corrupti! Quod consectetur dicta ab nulla sapiente similique libero incidunt ut facere velit ad, minima, perferendis, blanditiis nostrum maiores praesentium maxime?
+    </div>
+
+    
+
+    <h3>Format code</h3>
+    <pre>
+        yessir &lt;b&gt;This is bold&lt;/b&gt;
+    </pre>
+    <p>
+        <code> ipsum dolor sit amet consectetur adipisicing elit.</code> Culpa accusantium totam ea sed cupiditate ipsam architecto eligendi saepe quaerat nesciunt dolor qui dolore quae error obcaecati quis debitis, repellat nisi. 
+        &lt;b&gt;This is bold&lt;/b&gt;
+    </p>
+
+    <h3>Forms</h3>
+    <form action="" method="GET">
+
+        <div>
+            <input required name="email" type="email" value="hello world" placeholder="Enter your name">
+        </div>
+        <div>
+            <textarea required name="textsarea" cols="30" rows="5" placeholder="placeholder text">Text in here white  space</textarea>
+        </div>
+        <div>
+            <button type="submit">Click me!</button>
+        </div>
+        <div>
+            <select name="selected_option" >
+                <option value="" disabled="disabled">-disabled-</option>
+                <option value="value1">One</option>
+                <option value="value2">Two</option>
+                <option value="value3">Three</option>
+                <option value="default" selected="selected">default</option>
+            </select>
+        </div>
+    </form>
+
+    <h3>Embeds</h3>
+    <iframe src="https://youtu.be/vRPCAAUBMms" frameborder="0"></iframe>
+    <iframe width="894" height="503" src="https://www.youtube.com/embed/vRPCAAUBMms" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+    <div id="bottom">
+        <a href="#top">Back to the top</a>
+        &copy;2022
+    </div>
+
+</body>
+</html>
