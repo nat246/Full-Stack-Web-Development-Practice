@@ -5,12 +5,91 @@
 
     <style>
         body {
-            background-color: black;
+            background-color: whitesmoke;
         }
+        div.border{
+            border-width: 15px;
+            border-style: solid;
+            border-color: red;
+            border-radius: 50%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 5px;
+            width: 200px;
+            height: 200px;
+        }
+
+        div.inline_block {
+            display: inline-block;
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+        }
+
+        div.half-width {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+
+        #box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-image: url("forest.jpg");
+            background-position: center center;
+            background-size: cover;
+            border-radius: 0 50% 0 50%;
+            box-shadow: 6px 6px 15px inset #444444;
+                        /* x   y   blur  inset   color */
+        }
+        /* Padding and Margin*/
+        #box2 {
+            width: 200px;
+            height: 200px;
+            border: 1px dashed blue;
+            /* padding: 10px; */
+            padding: 10px 15px 20px 25px;
+            margin: 30px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: block;
+        }
+
+        /* Set max width on element  */
+        #inline {
+            display: inline-block;
+            border: 1px solid red;
+            max-width: 500px;
+        }
+
+        body {
+            
+        }
+        
     </style>
 </head>
 
 <body>
+    <div class="border">This has a border</div>
+
+    <div class="inline_block">This is a block element</div>
+    <div class="inline_block">This is a block element</div>
+
+    <div class="half-width">This is a width</div>
     
+    <!-- Box class -->
+    <div id="box"></div>
+
+    <!-- Box 2 class Padding and Margin -->
+    <div id="box2">
+        Example of Text
+    </div>
+
+    <div id="inline">
+        Some text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text here
+    </div>
 </body>
 </html>
